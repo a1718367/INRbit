@@ -3,6 +3,7 @@ import { AuthContext } from '../contexts/AuthContext';
 import Axios from 'axios';
 import moment from 'moment-timezone';
 import Moment from 'react-moment';
+import Example from '../components/home'
 
 export default function Homepage() {
 
@@ -61,6 +62,7 @@ export default function Homepage() {
                 id:result._id
             }
         })
+        
         setHxdata(fdata)
     }
 
@@ -73,7 +75,7 @@ export default function Homepage() {
 
     return (
         <div className="container mt-3">
-           <h1>{state?state.name : null } </h1>
+           <h1>{state?`Hello ${state.name}`: null } </h1>
            {/* <h1>{state?state.email : "loading" } </h1> */}
            {/* <h1>{state?state._id : "loading" } </h1> */}
            <div>
@@ -140,7 +142,8 @@ export default function Homepage() {
                     
                 </div>
            </div>:
-           <h1>Please Sign Up or Login</h1>
+        //    <h1>Please Sign Up or Login</h1>
+            <Example/>
            
            }
            </div>
