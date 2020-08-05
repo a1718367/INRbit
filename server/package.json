@@ -1,12 +1,15 @@
 {
-  "name": "mern_contextapi_boilerplate",
+  "name": "inrbit",
   "version": "1.0.0",
-  "description": "mern context api boiler plate with login registration",
+  "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "cd ../client && npm run start",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
-  "author": "spandan joshi",
+  "author": "",
   "license": "MIT",
   "dependencies": {
     "@sendgrid/mail": "^7.2.0",
@@ -22,5 +25,9 @@
     "popper.js": "^1.16.1",
     "react-router-dom": "^5.1.2",
     "react-strap": "0.0.1"
+  },
+  "devDependencies": {
+    "concurrently": "^5.2.0",
+    "nodemon": "^2.0.4"
   }
 }
