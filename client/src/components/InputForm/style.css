@@ -1,0 +1,22 @@
+#form {
+    color: black;
+}
+
+h4 {
+    color: red;
+    text-align: center; 
+
+}
+#label {
+    text-align: center;
+}
+
+#button {
+    background-color: #49c6e5;
+    color: red;
+
+}
+
+#input {
+    width: 100%;
+}
